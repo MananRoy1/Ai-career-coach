@@ -7,8 +7,8 @@ import CoverLetterList from "./_components/cover-letter-list";
 export default async function CoverLetterPage() {
   const coverLetters = await getCoverLetters();
 
-  return (
-    <div className="container">
+  return ( 
+    <div className="container mx-auto p-6">
       <div className="flex flex-col md:flex-row gap-2 items-center justify-between mb-5">
         <h1 className="text-6xl font-bold gradient-title">My Cover Letters</h1>
         <Link href="/ai-cover-letter/new">
